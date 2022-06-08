@@ -1,4 +1,4 @@
-loc=eastus
+loc=eastus2
 rg='AZ-RG-B2B-Sandbox-01'
 # storageacc=wgckastorage
 vmimage=ubuntults
