@@ -1,5 +1,5 @@
 loc=eastus
-rg='rg-cka'
+rg='AZ-RG-B2B-Sandbox-01'
 # storageacc=wgckastorage
 vmimage=ubuntults
 shutdownutc=1230 #Auto Shutdown time in UTC
