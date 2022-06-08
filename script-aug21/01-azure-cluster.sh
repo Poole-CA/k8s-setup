@@ -41,9 +41,12 @@ controllervm='controller-vm'
 # to stop 
 # az vm deallocate --ids $(az vm list -d -g $rg --query "[?powerState=='VM running'].id" -o tsv)
 # az vm deallocate --ids $(az vm list -d -g $rg --query "[].id" -o tsv)
-echo "----------------- 1 Creating Resource Group -----------------"
+
+# No need to create RG when using PG resources. 
+#echo "----------------- 1 Creating Resource Group -----------------"
 # Create Resource Group in 
-az group create -n $rg -l $loc
+# az group create -n $rg -l $loc
+
 
 echo "----------------- 2 Creating Storage Account -----------------"
 # Create storage account and storage container
