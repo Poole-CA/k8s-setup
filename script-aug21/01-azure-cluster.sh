@@ -76,7 +76,7 @@ az network vnet subnet create -g $rg --vnet-name $vnet -n $subnet --address-pref
 
 echo "----------------- 6 Creating Client VM's Public IP -----------------"
 # Create nic and pip for controller VM
-az network public-ip create -n $clientpip -g $rg
+az network public-ip create -n $clientpip -g $rg --sku Standard
 
 echo "----------------- 7 Creating Client VM's NIC -----------------"
 az network nic create -g $rg -n $clientnic --private-ip-address $clientvmprivateip --public-ip-address $clientpip --vnet $vnet --subnet $subnet --ip-forwarding
